@@ -7,14 +7,13 @@ $fancy-font: 'Kaushan Script', cursive;
 $body-font: 'Raleway',arial,sans-serif;
 $stylish-font: 'Merriweather', serif;
 $font-size: 16px;
-
 $black: #000;
 $white: #fff;
 $grey: #585c65;
 $mediumgrey: #9b9b9b;
 $lightgrey: #eee;
 $blue: #3466a1;
-$redfade: #BD4A4A;
+$redfade: #bd4a4a;
 $padding: 10px;
 $margin: 10px;
 
@@ -242,6 +241,7 @@ footer {
 }
 .featured-section {
     min-height: 701px;
+    padding: 0;
     .featured-image-holder {
         position: relative;
     }
@@ -265,7 +265,6 @@ footer {
         border-radius: 3px;
         background: #000;
         color: #fff;
-
         font-family: $body-font;
         font-weight: 500;
         font-size: 10px;
@@ -281,10 +280,10 @@ footer {
         }
     }
 }
-.book_details{
-    .tags{
+.book_details {
+    .tags {
         font-family: $stylish-font;
-        a{
+        a {
             font-weight: 400;
             font-size: 12px!important;
         }
@@ -296,7 +295,6 @@ footer {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
-
 h3.item-title a {
     color: $redfade;
     font-family: $stylish-font;
@@ -312,3 +310,230 @@ h3.item-title a {
     text-align: center;
     margin: 0;
 }
+
+// BESR SELLING SECTION
+.best_selling_section {
+    .products{
+        position: relative;
+        margin-left: -40px;
+    }
+    ul li {
+        list-style: none;
+        float: left;
+        padding: 0;
+    }
+    ul li img{
+        width: 100%;
+    }
+    .inverse {
+        background: #000;
+        color: #fff;
+    }
+}
+
+// HOVER eFFECT
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'feathericons';
+	src:url('../fonts/feathericons/feathericons.eot?-8is7zf');
+	src:url('../fonts/feathericons/feathericons.eot?#iefix-8is7zf') format('embedded-opentype'),
+		url('../fonts/feathericons/feathericons.woff?-8is7zf') format('woff'),
+		url('../fonts/feathericons/feathericons.ttf?-8is7zf') format('truetype'),
+		url('../fonts/feathericons/feathericons.svg?-8is7zf#feathericons') format('svg');
+}
+
+/* Common style */
+.grid figure {
+	overflow: hidden;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid figure img {
+	opacity: 0.9;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+/*---------------*/
+/***** Sadie *****/
+/*---------------*/
+
+figure.effect-sadie figcaption::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: -webkit-linear-gradient(top, rgb(49, 112, 143) 0%, rgba(72,76,97,0.8) 75%);
+	background: linear-gradient(to bottom, rgb(49, 112, 143) 0%, rgba(72,76,97,0.8) 75%);
+	content: '';
+	opacity: 0;
+	-webkit-transform: translate3d(0,50%,0);
+	transform: translate3d(0,50%,0);
+}
+
+figure.effect-sadie h2 {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	color: #484c61;
+	-webkit-transition: -webkit-transform 0.35s, color 0.35s;
+	transition: transform 0.35s, color 0.35s;
+	-webkit-transform: translate3d(0,-50%,0);
+	transform: translate3d(0,-50%,0);
+}
+
+figure.effect-sadie figcaption::before,
+figure.effect-sadie p {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-sadie p {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 2em;
+	width: 100%;
+	opacity: 0;
+	-webkit-transform: translate3d(0,10px,0);
+	transform: translate3d(0,10px,0);
+}
+
+figure.effect-sadie:hover h2 {
+	color: #fff;
+	-webkit-transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+	transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+}
+
+figure.effect-sadie:hover figcaption::before ,
+figure.effect-sadie:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+// FRON PAGE SEARCH BOX
+.search_box{
+    background-color: $lightgrey;
+}
+.book_search input[type="text"], select {
+    width: 350px;
+    outline: none;
+}
+.book_search input, .book_search select {
+    margin: 5px;
+}
+.book_search {
+    select {
+        background: url("../images/select.png") no-repeat scroll 94% center;
+        text-indent: 0.01px;
+        text-overflow: "";
+        border: none;
+        border-bottom: 1px solid #3c3c3c;
+        border-radius: 0;
+        font-style: italic;
+    }
+    input.button {
+        margin: 0;
+        padding: 5px 20px;
+    }
+}
+textarea, select, input[type="email"], input[type="password"], input[type="search"], input[type="text"], input[type="url"], input[class*="text"] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-background-clip: padding;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    color: #999;
+    border: none;
+    border-bottom: 1px solid #3c3c3c;
+    background: transparent;
+    height: 2.5em;
+    padding: 3px 4px;
+}
+.wishlist-button{
+    -webkit-box-shadow: 0 5px 10px -2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 5px 10px -2px rgba(0,0,0,0.5);
+    box-shadow: 0 5px 10px -2px rgba(0,0,0,0.5);
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 3px;
+    background: #000;
+    color: #fff;
+    font-family: $body-font;
+    font-weight: 500;
+    font-size: 10px;
+    text-transform: uppercase;
+    line-height: 20px !important;
+}
+input.wishlist-button.center-button {
+    display: block;
+    width: 150px;
+    margin: 15px auto;
+}
+
+@import 'single-book';

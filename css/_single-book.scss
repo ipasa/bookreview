@@ -1,0 +1,62 @@
+.hero.page_title .container {
+    position: relative;
+    padding: 70px 0 90px;
+    background: url(../images/book_tilt.png) 105% 80px no-repeat;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.hero.page_title {
+    background-color: #ededed;
+}
+.hero.page_title .page_title {
+    font-family: $sub-font;
+    font-size: 100px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1em;
+    color: #3c3c3c;
+}
+
+
+// SEARCH SECTION FOR SIDEBAR
+.book_search.widget_book_search {
+    background-color: #3c3c3c;
+    padding: 65px 50px 90px;
+    .widget_title {
+        text-align: left;
+        font-family: $body-font;
+        font-weight: 100;
+        font-size: 36px;
+        color: white;
+        line-height: 1em;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+    .widget_title strong {
+        font-weight: 700;
+        display: block;
+    }
+}
+.book_search.widget_book_search input, .book_search.widget_book_search select {
+    width: 100% !important;
+    margin: 5px 0;
+    border-bottom-color: #797979;
+}
+.button, .post .post_details .more-link, .woocommerce-tabs .tabs li, .single-product .col-md-7 .add_to_wishlist, .col2-set .col-1 a.edit, .col2-set .col-2 a.edit, .col2-set#customer_login .lost_password a, .vc_read_more, button, input[type="submit"], input[type="reset"] {
+    -webkit-box-shadow: 0 5px 10px -2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 5px 10px -2px rgba(0,0,0,0.5);
+    box-shadow: 0 5px 10px -2px rgba(0,0,0,0.5);
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 3px;
+    background: #000;
+    color: #fff;
+    font-family: $body-font;
+    font-weight: 500;
+    font-size: 10px;
+    text-transform: uppercase;
+    line-height: 20px !important;
+}
