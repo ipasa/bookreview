@@ -7474,6 +7474,7 @@ footer .contact-now-btn:hover {
 }
 
 .welcome h2 {
+  font-family: "Montserrat", sans-serif;
   font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
@@ -7808,7 +7809,7 @@ input.wishlist-button.center-button {
 .hero.page_title .container {
   position: relative;
   padding: 70px 0 90px;
-  background: url(../images/book_tilt.png) 105% 80px no-repeat;
+  background: url("../images/book_tilt.png") 105% 80px no-repeat;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -7825,6 +7826,10 @@ input.wishlist-button.center-button {
   text-transform: uppercase;
   line-height: 1em;
   color: #3c3c3c;
+}
+
+aside.col-md-3 {
+  padding: 0;
 }
 
 .book_search.widget_book_search {
@@ -7848,13 +7853,24 @@ input.wishlist-button.center-button {
   display: block;
 }
 
-.book_search.widget_book_search input, .book_search.widget_book_search select {
+.book_search.widget_book_search input,
+.book_search.widget_book_search select {
   width: 100% !important;
   margin: 5px 0;
   border-bottom-color: #797979;
 }
 
-.button, .post .post_details .more-link, .woocommerce-tabs .tabs li, .single-product .col-md-7 .add_to_wishlist, .col2-set .col-1 a.edit, .col2-set .col-2 a.edit, .col2-set#customer_login .lost_password a, .vc_read_more, button, input[type="submit"], input[type="reset"] {
+.button,
+.post .post_details .more-link,
+.woocommerce-tabs .tabs li,
+.single-product .col-md-7 .add_to_wishlist,
+.col2-set .col-1 a.edit,
+.col2-set .col-2 a.edit,
+.col2-set#customer_login .lost_password a,
+.vc_read_more,
+button,
+input[type="submit"],
+input[type="reset"] {
   -webkit-box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.5);
   box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.5);
@@ -7870,4 +7886,199 @@ input.wishlist-button.center-button {
   font-size: 10px;
   text-transform: uppercase;
   line-height: 20px !important;
+}
+
+.content_inner {
+  padding: 50px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.content_inner .product_title {
+  font-size: 20px;
+  color: #3c3c3c;
+  margin-bottom: 20px;
+}
+
+.content_inner p {
+  font-family: "Lato", sans-serif;
+}
+
+.book-image {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+.content_inner .author a {
+  color: #aaa;
+  font-size: 11px;
+}
+
+.cats a {
+  color: #aaa;
+  font-size: 10px;
+}
+
+h2.tags {
+  display: inline-block;
+  font-family: "Merriweather", serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 0;
+}
+
+h2.rating {
+  display: inline-block;
+  font-family: "Merriweather", serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 0;
+  margin-top: 13px;
+}
+
+.rating_row {
+  margin-top: 10px;
+  border-top: 1px solid #3c3c3c;
+  border-bottom: 1px solid #3c3c3c;
+}
+
+.stars span {
+  display: inline-block;
+  height: 16px;
+  width: 95px;
+  position: relative;
+}
+
+.stars span .fa-star {
+  color: #f2e343;
+}
+
+p.stars {
+  display: inline-block;
+}
+
+.review_section {
+  margin-top: 30px;
+}
+
+.review_section .border-top-bottom {
+  border-top: 1px solid #3c3c3c;
+  border-bottom: 1px solid #3c3c3c;
+}
+
+.review_panel h2 {
+  font-family: "Raleway", arial, sans-serif;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+blockquote {
+  text-indent: 30px;
+  font-size: 12px;
+  border-left: 3px solid #eee;
+  color: #585858;
+  font-style: italic;
+  font-family: Georgia,Palatino,"Palatino Linotype",Times,"Times New Roman",serif;
+  margin: 1em 40px;
+  padding-left: 20px;
+  font-weight: 200;
+}
+
+.user_blockquote {
+  margin-top: -25px;
+}
+
+.user_indivisual_review img {
+  z-index: 10;
+}
+
+.reviewer_name {
+  position: absolute;
+  top: 0;
+  color: #3B556B;
+  padding-left: 30px;
+  font-family: "Kaushan Script", cursive;
+  letter-spacing: 1.333px;
+  font-weight: 400;
+}
+
+.reviewer_rating {
+  padding-left: 30px;
+}
+
+span .fa-star {
+  color: #F2E343;
+}
+
+.grating {
+  display: inline;
+  font-family: "Merriweather", serif;
+  font-size: 12px;
+}
+
+.model-review {
+  margin-top: 50px;
+}
+
+.col-md-12.padding_effect_fix {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+h2.also_like.section_title {
+  background: #000;
+  color: #fff;
+}
+
+.shadow {
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 15px -2px rgba(0, 0, 0, 0.5);
+}
+
+.col-xs-12.col-md-12.col-sm-12.best_selling_section.shadow {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.comment-form label {
+  width: 170px;
+  display: block;
+}
+
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  color: #999;
+  border: none;
+  border-bottom: 1px solid #3c3c3c;
+  background: transparent;
+  height: 150px;
+  padding: 3px 4px;
+  outline: none;
+  width: 600px;
+}
+
+.border-top-bottom {
+  border-top: 1px solid #3c3c3c;
+  border-bottom: 1px solid #3c3c3c;
 }

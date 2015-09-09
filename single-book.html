@@ -8,8 +8,9 @@
 
     <title>My Book | My Review</title>
 
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700|Kaushan+Script|Montserrat' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:200,400,700|Kaushan+Script|Montserrat' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Raleway:100,500|Merriweather' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -40,54 +41,372 @@
     <!-- END OF HERO SECTION -->
 
     <!-- CONTENT SECTION -->
-    <div class="content">
-        <div class="row">
-            <section class="col-md-9">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quos ipsam blanditiis, sequi eum neque quasi ea vero totam. Quae facilis placeat ab in tempore molestias, dicta dolorem sunt repellat quos, aspernatur accusantium facere eligendi expedita nulla culpa magni doloribus sed sit. Nostrum perferendis molestias officia dolorum iste quod suscipit sunt, hic alias unde maxime quisquam quibusdam, consequatur labore totam culpa voluptatibus cupiditate mollitia nisi id inventore reprehenderit ad velit? Officiis ducimus adipisci reprehenderit, repellendus voluptas labore quas aut optio! Perspiciatis quaerat corporis, ullam commodi reprehenderit aut earum recusandae doloribus quasi, maxime reiciendis non nihil ab, quae nobis repudiandae molestiae!</p>
-            </section>
+    <div class="container-fluid">
+        <div class="content">
+            <div class="row">
 
-            <!-- SEARCH SECTION FOR SIDEBAR -->
-            <aside class="col-md-3">
-                <div class="book_search widget_book_search">
-			        <div class="widget_content">
-				        <h2 class="widget_title">Find<strong>Product</strong></h2>
-				        <form action="http://tokokoodemo.us/papirus/books/" method="get" role="search" _lpchecked="1">
-					        <input type="text" name="s" placeholder="Find Products">
-        					<select name="product_cat" id="product_cat" class="postform">
-                            	<option value="0" selected="selected">All Categories</option>
-                            	<option class="level-0" value="programming">Programming</option>
-                            	<option class="level-0" value="web-design">Web Design</option>
-                            	<option class="level-0" value="javascript">Javascript</option>
-                            	<option class="level-0" value="web-application">Web Application</option>
-                            	<option class="level-0" value="html5">HTML5</option>
-                            	<option class="level-0" value="seo">SEO</option>
-                            </select>
+                <!-- BOOK DESCRIPTION AND REVIEw SECTION -->
+                <section class="col-md-9 content_inner">
+                    <div class="col-md-5">
+                        <img src="images/books/book5-300.jpg" alt="" class="img-responsive book-image">
+                    </div>
+                    <!-- BOOK DETAIL'S DESCRIPTION -->
+                    <div class="col-md-7">
+                        <p class="author">By <a href="#">Ellen Lupton, </a></p>
+                        <p class="author">By <a href="#">Nicholas C. Zakas</a></p>
+                        <h1 itemprop="name" class="product_title entry-title">Professional Ajax, 2nd Edition</h1>
 
-				            <select name="authors" id="authors" class="postform">
-                            	<option value="0" selected="selected">All Authors</option>
-                            	<option class="level-0" value="thoriq-firdaus">Thoriq Firdaus</option>
-                            	<option class="level-0" value="tim-kadlec">Tim Kadlec</option>
-                            	<option class="level-0" value="steve-krug">Steve Krug</option>
-                            	<option class="level-0" value="susan-weinschenk">Susan Weinschenk</option>
-                            	<option class="level-0" value="austin-kleon">Austin Kleon</option>
-                            	<option class="level-0" value="ellen-lupton">Ellen Lupton</option>
-                            	<option class="level-0" value="patrick-mcneil">Patrick McNeil</option>
-                            	<option class="level-0" value="brian-miller">Brian Miller</option>
-                            	<option class="level-0" value="kyle-simpson">Kyle Simpson</option>
-                            	<option class="level-0" value="nicholas-c-zakas">Nicholas C. Zakas</option>
-                            </select>
+                        <div itemprop="description">
+                            <div itemprop="description">
+                                <p>Professional Ajax 2nd Edition provides a developer-level tutorial of Ajax techniques, patterns, and use cases. The book begins by exploring the roots of Ajax, covering how the evolution of the web and new technologies directlyled to the development of Ajax techniques. A detailed discussion of how frames, JavaScript, cookies, XML, and XMLHttp requests (XHR) related to Ajax is included. After this introduction, the book moves on to cover the implementation.</p>
+                            </div>
 
-        					<input type="submit" class="button" value="Search">
-        					<input type="hidden" name="post_type" value="product">
-				        </form>
-			        </div>
-		        </div>
-            </aside>
-            <!-- END OF SEARCH SECTION FOR SIDEBAR -->
+                            <!-- CARAGORIES SECTION -->
+                            <div class="row">
+                                <div class="col-md-12 col-xs-12 col-sm-4">
+                                    <span class="cats">
+                                        <h2 class="tags">Catagories : </h2>
+                                        <a href="#">Programming</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- CARAGORIES SECTION -->
 
+                            <!-- TAGS SECTION -->
+                            <div class="row">
+                                <div class="col-md-12 col-xs-12 col-sm-4">
+                                    <span class="cats">
+                                        <h2 class="tags">Tags : </h2>
+                                        <a href="#">Programming, </a>
+                                        <a href="#">Web Design</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- TAGS SECTION -->
+
+                            <!-- RATING SECTION -->
+                            <div class="row rating_row">
+                                <div class="col-md-12 col-xs-12 col-sm-4">
+                                    <h2 class="rating">Rating : </h2>
+                                    <p class="stars">
+                                        <span>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- RATING SECTION -->
+
+                        </div>
+                    </div>
+                    <!-- END OF BOOK DETAIL'S DESCRIPTION -->
+                    
+                    <div class="row">
+                        <div class="col-md-12 review_section">
+                            <div class="border-top-bottom">
+                                <h2 class="button">Review (2)</h2>
+                            </div>
+                            <div class="review_panel">
+                                <h2>Book Review By Users</h2>
+                            </div>
+
+                            <div class="user_indivisual_review">
+                                <div class="single_user">
+                                    <img src="images/user/david-bushell-reviewer.png" alt="">
+                                    <span class="reviewer_name">— David Bushell</span>
+                                    <!-- USER SINGLE RATING -->
+                                    <span>
+                                        <p class="stars reviewer_rating">
+                                            <div class="grating">Rating - </div>
+                                            <span>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </span>
+                                        </p>
+                                    </span>
+                                    <!-- END OF USER SINGLE RATING -->
+                                    <blockquote class="user_blockquote">“I’ll cut to the chase for those deliberating a purchase: it’s well worth the cover price. The eBook edition is a steal! This book establishes a mindset of understanding and exploring the medium. It embraces the breadth of its domain and will set you on an exciting path.cut to the chase for those deliberating a purchase: it’s well worth the cover price. The eBook edition is a steal! This book establishes a mindset of understanding and exploring the medium. It embraces the breadth of its domain and will set you on an exciting path.”</blockquote>
+                                </div>
+
+                                <div class="single_user">
+                                    <img src="images/user/david-bushell-reviewer.png" alt="">
+                                    <span class="reviewer_name">— David Bushell</span>
+                                    <span>
+                                        <p class="stars reviewer_rating">
+                                            <div class="grating">Rating - </div>
+                                            <span>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </span>
+                                        </p>
+                                    </span>
+                                    <blockquote class="user_blockquote">“I’ll cut to the chase for those deliberating a purchase: it’s well worth the cover price. The eBook edition is a steal! This book establishes a mindset of understanding and exploring the medium. It embraces the breadth of its domain and will set you on an exciting path.cut to the chase for those deliberating a purchase: it’s well worth the cover price. The eBook edition is a steal! This book establishes a mindset of understanding and exploring the medium. It embraces the breadth of its domain and will set you on an exciting path.”</blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- REVIEw FORM -->
+                    <div id="review_form_wrapper">
+                        <div id="review_form">
+                            <div class="border-top-bottom">
+                                <h2 class="button">Give a Review</h2>
+                            </div>
+                            <div id="respond" class="comment-respond">
+                                <h3 id="reply-title" class="comment-reply-title">Be the first to review “Professional JavaScript for Web Developers”
+                                </h3>
+
+                                <form action="#" method="post" id="commentform" class="comment-form" _lpchecked="1">
+                                    <p class="comment-form-comment">
+                                        <label for="comment">Your Review</label>
+                                        <textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
+                                    </p>
+                                    <p class="form-submit">
+                                        <input name="submit" type="submit" id="submit" class="submit" value="Submit">
+                                    </p>
+                                </form>
+                            </div>
+                            <!-- #respond -->
+                        </div>
+                    </div>
+                <!-- END OF REVIEw FORM  -->
+
+                </section>
+                <!-- BOOK DESCRIPTION AND REVIEw SECTION -->
+
+
+
+                <!-- SEARCH SECTION FOR SIDEBAR -->
+                <aside class="col-md-3">
+                    <div class="book_search widget_book_search">
+                        <div class="widget_content">
+                            <h2 class="widget_title">Find
+                                <strong>Product</strong>
+                            </h2>
+                            <form action="http://tokokoodemo.us/papirus/books/" method="get" role="search" _lpchecked="1">
+                                <input type="text" name="s" placeholder="Find Products">
+                                <select name="product_cat" id="product_cat" class="postform">
+                                    <option value="0" selected="selected">All Categories</option>
+                                    <option class="level-0" value="programming">Programming</option>
+                                    <option class="level-0" value="web-design">Web Design</option>
+                                    <option class="level-0" value="javascript">Javascript</option>
+                                    <option class="level-0" value="web-application">Web Application</option>
+                                    <option class="level-0" value="html5">HTML5</option>
+                                    <option class="level-0" value="seo">SEO</option>
+                                </select>
+
+                                <select name="authors" id="authors" class="postform">
+                                    <option value="0" selected="selected">All Authors</option>
+                                    <option class="level-0" value="thoriq-firdaus">Thoriq Firdaus</option>
+                                    <option class="level-0" value="tim-kadlec">Tim Kadlec</option>
+                                    <option class="level-0" value="steve-krug">Steve Krug</option>
+                                    <option class="level-0" value="susan-weinschenk">Susan Weinschenk</option>
+                                    <option class="level-0" value="austin-kleon">Austin Kleon</option>
+                                    <option class="level-0" value="ellen-lupton">Ellen Lupton</option>
+                                    <option class="level-0" value="patrick-mcneil">Patrick McNeil</option>
+                                    <option class="level-0" value="brian-miller">Brian Miller</option>
+                                    <option class="level-0" value="kyle-simpson">Kyle Simpson</option>
+                                    <option class="level-0" value="nicholas-c-zakas">Nicholas C. Zakas</option>
+                                </select>
+
+                                <input type="submit" class="button" value="Search">
+                                <input type="hidden" name="post_type" value="product">
+                            </form>
+                        </div>
+                    </div>
+                </aside>
+                <!-- END OF SEARCH SECTION FOR SIDEBAR -->
+
+            </div>
         </div>
     </div>
     <!-- END OF CONTENT SECTION -->
+
+    <!-- RELATED PRODUCTS -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-12 col-sm-12 best_selling_section shadow">
+                <h2 class="section_title">RELATED PRODUCTS</h2>
+
+                <!-- RELATED PRODUCTS slider -->
+                    <ul class="products">
+
+                        <li class="col-xs-12 col-sm-6 col-md-4 first last">
+                            <div class="grid">
+            					<figure class="effect-sadie">
+            						<img src="images/books/book6-300.jpg" class="" alt="book5-300">
+            						<figcaption>
+            							<h2>Holy <span>Sadie</span></h2>
+            							<p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
+            							<a href="#">View more</a>
+                                        <!-- RATING SECTION -->
+                                        <div class="row model-review">
+                                            <div class="col-md-12 col-xs-12 col-sm-4">
+                                                <p class="stars">
+                                                    <span>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star-o"></i>
+                                                        <i class="fa fa-star-o"></i>
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- RATING SECTION -->
+            						</figcaption>
+            					</figure>
+            				</div>
+                        </li>
+
+                        <li class="col-xs-12 col-sm-6 col-md-4 first last">
+
+                            <div class="grid">
+            					<figure class="effect-sadie">
+            						<img src="images/books/book8-300.jpg" class="" alt="book5-300">
+            						<figcaption>
+            							<h2>Holy <span>Sadie</span></h2>
+            							<p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
+            							<a href="#">View more</a>
+            						</figcaption>
+            					</figure>
+            				</div>
+                        </li>
+
+                        <li class="col-xs-12 col-sm-6 col-md-4 first last">
+                            <div class="grid">
+            					<figure class="effect-sadie">
+            						<img src="images/books/book8-300.jpg" class="" alt="book5-300">
+            						<figcaption>
+            							<h2>Holy <span>Sadie</span></h2>
+            							<p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
+            							<a href="#">View more</a>
+            						</figcaption>
+            					</figure>
+            				</div>
+                        </li>
+                    </ul>
+                <!-- RELATED PRODUCTS slider -->
+
+            </div>
+        </div>
+    </div>
+    <!-- END OF RELATED PRODUCTS -->
+
+
+    <!-- YOU MAY ALSO LIKE -->
+    <div class="container">
+        <div class="row">
+            <h2 class="also_like section_title">YOU MAY ALSO LIKE</h2>
+            <div class="col-xs-12 col-md-12 col-sm-12 best_selling_section shadow">
+                <!-- RELATED PRODUCTS slider -->
+                    <ul class="products">
+
+                        <li class="col-xs-12 col-sm-6 col-md-3 first last">
+                            <div class="grid">
+            					<figure class="effect-sadie">
+            						<img src="images/books/book6-300.jpg" class="" alt="book5-300">
+            						<figcaption>
+            							<h2>Holy <span>Sadie</span></h2>
+            							<p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
+            							<a href="#">View more</a>
+                                        <!-- RATING SECTION -->
+                                        <div class="row model-review">
+                                            <div class="col-md-12 col-xs-12 col-sm-4">
+                                                <p class="stars">
+                                                    <span>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star-o"></i>
+                                                        <i class="fa fa-star-o"></i>
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- RATING SECTION -->
+            						</figcaption>
+            					</figure>
+            				</div>
+                        </li>
+
+                        <li class="col-xs-12 col-sm-6 col-md-3 first last">
+
+                            <div class="grid">
+            					<figure class="effect-sadie">
+            						<img src="images/books/book8-300.jpg" class="" alt="book5-300">
+            						<figcaption>
+            							<h2>Holy <span>Sadie</span></h2>
+            							<p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
+            							<a href="#">View more</a>
+            						</figcaption>
+            					</figure>
+            				</div>
+                        </li>
+
+                        <li class="col-xs-12 col-sm-6 col-md-3 first last">
+
+                            <div class="grid">
+            					<figure class="effect-sadie">
+            						<img src="images/books/book8-300.jpg" class="" alt="book5-300">
+            						<figcaption>
+            							<h2>Holy <span>Sadie</span></h2>
+            							<p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
+            							<a href="#">View more</a>
+            						</figcaption>
+            					</figure>
+            				</div>
+                        </li>
+
+                        <li class="col-xs-12 col-sm-6 col-md-3 first last">
+
+                            <div class="grid">
+            					<figure class="effect-sadie">
+            						<img src="images/books/book8-300.jpg" class="" alt="book5-300">
+            						<figcaption>
+            							<h2>Holy <span>Sadie</span></h2>
+            							<p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
+            							<a href="#">View more</a>
+            						</figcaption>
+            					</figure>
+            				</div>
+                        </li>
+
+                        <li class="col-xs-12 col-sm-6 col-md-3 first last">
+
+                            <div class="grid">
+            					<figure class="effect-sadie">
+            						<img src="images/books/book8-300.jpg" class="" alt="book5-300">
+            						<figcaption>
+            							<h2>Holy <span>Sadie</span></h2>
+            							<p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
+            							<a href="#">View more</a>
+            						</figcaption>
+            					</figure>
+            				</div>
+                        </li>
+
+                    </ul>
+                <!-- RELATED PRODUCTS slider -->
+            </div>
+        </div>
+    </div>
+    <!-- END OF YOU MAY ALSO LIKE -->
+
+    <section class="footer-bottom">
+        2014 &copy; Jonathan White. All rights reserved.
+    </section>
 
 </body>
 
