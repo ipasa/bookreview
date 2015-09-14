@@ -125,23 +125,54 @@ header {
     }
 }
 .instagram-wrap {
-    background: $lightgrey;
+    background: #fff;
+    margin-bottom: 100px;
+    .catagory_heading {
+        margin-top: 50px;
+
+        h3 {
+            font-family: $body-font;
+            text-transform: uppercase;
+            letter-spacing: 0.5em;
+            font-size: 12px;
+            font-weight: 700;
+            text-align: center;
+            padding: $padding*5 0;
+            color: darken($lightgrey, 20%);
+        }
+    }
 }
 .instagram-content {
-    h3 {
-        text-transform: uppercase;
-        letter-spacing: 0.5em;
-        font-size: 12px;
-        font-weight: 700;
-        text-align: center;
-        padding: $padding*5 0;
-        color: darken($lightgrey, 20%);
-    }
     .photo-box {
         margin: 0 0 $margin*3;
         .image-wrap {
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
             img {
                 width: 100%;
+            }
+            .book-info{
+                position: absolute;
+                top: 15px;
+                left: 15px;
+                padding: $padding/2;
+                background: $black;
+                background: rgba($black, 0.4);
+                color: $white;
+                p{
+                    margin-bottom: 0;
+                }
+            }
+            .book-cata{
+                position: absolute;
+                top: 50px;
+                left: 15px;
+                padding: $padding/2;
+                background: $black;
+                background: rgba($black, 0.4);
+                color: $white;
+                p{
+                    margin-bottom: 0;
+                }
             }
             .likes {
                 position: absolute;
@@ -151,6 +182,9 @@ header {
                 background: $black;
                 background: rgba($black, 0.4);
                 color: $white;
+            }
+            p.stars {
+                margin-bottom: 0;
             }
         }
         .description {
@@ -164,6 +198,7 @@ header {
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
         }
     }
 }
@@ -538,3 +573,9 @@ input.wishlist-button.center-button {
 }
 
 @import 'single-book';
+@import 'navigation';
+
+// SLIDER SECTION
+#demo{
+    background-color: $lightgrey;
+}
